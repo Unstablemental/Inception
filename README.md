@@ -1,4 +1,5 @@
 # Docker
+
 a docker is a platform for building  ,running and shipping applications
 so if your application works and your machine it can run and funcrion the same way on other machines
 
@@ -13,3 +14,7 @@ Consistency: The application always has what it needs, no matter the environment
 Isolation: Applications in separate containers don't interfere with each other, like having separate rooms for different tasks.
 Docker itself is the software that helps you build and manage these containers.
 
+# difference between a container and a virtual machine
+
+a Container is an isolated environment for running a application.
+a VM is an abstraction of a machine 
