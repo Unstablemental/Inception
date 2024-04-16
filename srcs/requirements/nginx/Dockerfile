@@ -14,3 +14,4 @@ RUN mkdir -p /var/run/nginx
 # Copy the configuration file from your host to your current location
 COPY conf/nginx.conf /etc/nginx/nginx.conf
 
+EXPOSE 443
