@@ -11,7 +11,14 @@ RUN openssl req -x509 -nodes -out /etc/nginx/ssl/inception.crt -keyout /etc/ngin
 #create a flder to store nginx conf file
 RUN mkdir -p /var/run/nginx 
 
+RUN mkdir -p /var/www
+
 # Copy the configuration file from your host to your current location
-COPY conf/nginx.conf /etc/nginx/nginx.conf
+
+COPY conf/nginx.conf /etc/nginx/conf.d/test.conf
+
+COPY conf/index.html /var/www/index.html
 
 EXPOSE 443
+
+CMD ["nginx", "-g", "daemon off;"]
