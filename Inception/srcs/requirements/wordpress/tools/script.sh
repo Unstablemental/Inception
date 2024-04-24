@@ -1,6 +1,7 @@
 #!bin/sh
 
-DOMAIN_NAME=msekhsou.42.fr
+# DOMAIN_NAME=msekhsou.42.fr
+DOMAIN_NAME=127.0.0.1
 
 DB_NAME=mariadb
 DB_USER=user
